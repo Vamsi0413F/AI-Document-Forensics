@@ -1,9 +1,0 @@
-# Python cache
-__pycache__/
-*.pyc
-# Member 1 test files
-sample.pdf
-test_image.png
-test_ocr.py
-test_member1.py
-
