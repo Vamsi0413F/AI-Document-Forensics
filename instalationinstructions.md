@@ -16,32 +16,66 @@ Open a terminal and navigate to the project folder:
 
 ```bash
 cd AI-Document-Forensics
-2. Create a Virtual Environment
+```
+
+## 2. Create a Virtual Environment
+
 Create a Python virtual environment:
+
+```bash
 python -m venv .venv
+```
 
-3. Activate the Virtual Environment
-Windows
+## 3. Activate the Virtual Environment
+
+### Windows
+
+```bash
 .venv\Scripts\activate
+```
 
-macOS / Linux
+### macOS / Linux
+
+```bash
 source .venv/bin/activate
+```
 
-4. Install Required Dependencies
-Install all required Python packages using requirements.txt:
+## 4. Install Required Dependencies
+
+Install all required Python packages using `requirements.txt`:
+
+```bash
 pip install -r requirements.txt
+```
 
-5. Install Tesseract OCR
+## 5. Install Tesseract OCR
+
 VERIDOC uses Tesseract OCR for extracting text from scanned documents and images.
-Windows
-Install Tesseract OCR and add the Tesseract installation directory to your system PATH.
-macOS
-If Homebrew is installed:
-brew install tesseract
-6. Run the Application
-Start the VERIDOC Streamlit application:
-streamlit run app.py
 
-7. Open the Application
+### Windows
+
+Install Tesseract OCR and add the Tesseract installation directory to your system `PATH`.
+
+### macOS
+
+If Homebrew is installed:
+
+```bash
+brew install tesseract
+```
+
+## 6. Run the Application
+
+Start the VERIDOC Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+## 7. Open the Application
+
 After Streamlit starts, open the following URL in your browser:
+
+```
 http://localhost:8501
+```
