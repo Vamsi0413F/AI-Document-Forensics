@@ -1,4 +1,5 @@
 # AI-Document-Forensics
+
 # VERIDOC — AI-Powered Document Forensics
 
 > An AI-assisted document forensic screening platform that analyzes PDFs and images for content inconsistencies, formatting anomalies, metadata irregularities, suspicious visual regions, and other forensic indicators.
