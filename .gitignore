@@ -13,3 +13,8 @@ venv/
 # IDE
 .vscode/
 .idea/
+
+# Local test documents
+/authentic.pdf
+/modified.pdf
+/image_sample.pdf

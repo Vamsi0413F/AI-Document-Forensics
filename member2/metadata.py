@@ -1,10 +1,10 @@
-import fitz
+import pymupdf
 
 
 def extract_metadata(file_path: str) -> dict:
-    """Extract document metadata from a PDF."""
+    """Extract PDF metadata and basic document information."""
 
-    document = fitz.open(file_path)
+    document = pymupdf.open(file_path)
 
     metadata = document.metadata
 
@@ -18,6 +18,19 @@ def extract_metadata(file_path: str) -> dict:
         "creation_date": metadata.get("creationDate"),
         "modification_date": metadata.get("modDate"),
         "page_count": len(document),
+        "has_metadata": any(
+            metadata.get(field)
+            for field in [
+                "title",
+                "author",
+                "subject",
+                "keywords",
+                "creator",
+                "producer",
+                "creationDate",
+                "modDate",
+            ]
+        ),
     }
 
     document.close()
