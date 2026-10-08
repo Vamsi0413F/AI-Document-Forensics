@@ -1,0 +1,9 @@
+# Test files
+sample.pdf
+test_image.png
+test_ocr.py
+test_member1.py
+
+# Python cache
+__pycache__/
+*.pyc
